@@ -1,0 +1,18 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: travel
+
+  datasource:
+    test-on-borrow: true
+    validation-query: SELECT 1
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://rds-database-db-001.cnxo7b29nalo.ap-southeast-1.rds.amazonaws.com/riding_order?characterEncoding=utf-8&allowMultiQueries=true&serverTimezone=GMT%2B0
+    username: GrabDB_test
+    password: 955rC5CMGx5kWUxu
+
+WX_TOKEN: travel
+WX_ACCESS_TOKEN_URL: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxa021c641df80ed55&secret=48c446830bfc7af8fb36aa1943e03489
+WX_CREATE_MENU_URL: https://api.weixin.qq.com/cgi-bin/menu/create
